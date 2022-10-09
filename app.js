@@ -2,7 +2,6 @@ const stripe = require('stripe')('sk_test_51Iq7GdLxbwyf0mcitBtRuEF0EmjYvnqnon3Nr
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 4242;
 
 
 const bodyParser = require('body-parser');
@@ -38,9 +37,7 @@ app.post('/create-checkout-session', async (req, res) => {
   res.send(session);
 });
 
-app.listen(PORT, () => {
-    console.log(`server started on port ${PORT}`);
-  });
+
   
 var server = app.listen(4242, function () {
   var host = server.address().address

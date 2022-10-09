@@ -1,7 +1,7 @@
 const stripe = require('stripe')('sk_test_51Iq7GdLxbwyf0mcitBtRuEF0EmjYvnqnon3NrOF7UdSXo3wrOL8pLJzT75S61DTZ5OUTsf0658j5eKPm0iQsbVMw00d0uCmCiw');
 const express = require('express');
 const app = express();
-app.use(express.static('public'));
+
 const PORT = process.env.PORT || 4242;
 
 

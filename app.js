@@ -2,7 +2,7 @@ const stripe = require('stripe')('sk_test_51Iq7GdLxbwyf0mcitBtRuEF0EmjYvnqnon3Nr
 const express = require('express');
 const app = express();
 
-
+const port = process.env.PORT || 3001;
 
 const bodyParser = require('body-parser');
 var cors = require('cors');
@@ -39,11 +39,7 @@ app.post('/create-checkout-session', async (req, res) => {
 
 
   
-var server = app.listen(4242, function () {
-  var host = server.address().address
-  var port = server.address().port
 
   
 
-  console.log("Example app listening at http://%s:%s", host, port)
-})
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

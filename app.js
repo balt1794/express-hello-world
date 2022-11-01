@@ -1,6 +1,10 @@
 // const stripe = require('stripe')('sk_test_51Iq7GdLxbwyf0mcitBtRuEF0EmjYvnqnon3NrOF7UdSXo3wrOL8pLJzT75S61DTZ5OUTsf0658j5eKPm0iQsbVMw00d0uCmCiw');
+//const stripe = require("stripe")(
+  //"sk_test_51HUTZsK2HsGxm2mtGYzrtVTyYQIv8nSlK3B7etmB3HFYOvpcQbtXsuaOfXBKiFfVWGTztXZmsIuyce7ScC4BEYIY00Cd22oUw6"
+//);
+
 const stripe = require("stripe")(
-  "sk_test_51HUTZsK2HsGxm2mtGYzrtVTyYQIv8nSlK3B7etmB3HFYOvpcQbtXsuaOfXBKiFfVWGTztXZmsIuyce7ScC4BEYIY00Cd22oUw6"
+  "sk_test_51Iq7GdLxbwyf0mcitBtRuEF0EmjYvnqnon3NrOF7UdSXo3wrOL8pLJzT75S61DTZ5OUTsf0658j5eKPm0iQsbVMw00d0uCmCiw"
 );
 
 const {

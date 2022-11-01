@@ -10,11 +10,12 @@
   "scripts": {
     "start": "node app.js"
   },
-  "dependencies": {    
+  "dependencies": {
     "@stripe/stripe-js": "1.38.1",
     "axios": "0.27.2",
     "cors": "2.8.4",
     "express": "4.16.4",
+    "firebase-admin": "^11.2.0",
     "stripe": "10.11.0",
     "uuid": "3.3.2"
   },
@@ -22,6 +23,3 @@
     "node": ">=14"
   }
 }
-
-
-

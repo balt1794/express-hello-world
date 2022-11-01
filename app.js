@@ -19,7 +19,6 @@ app.get("/", async (req, res) => {
   res.send('Node Server Working')
 })
 
-const bodyParser = require('body-parser');
 
 app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
   const payload = request.body;

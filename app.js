@@ -19,6 +19,16 @@ app.get("/", async (req, res) => {
   res.send('Node Server Working')
 })
 
+const bodyParser = require('body-parser');
+
+app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
+  const payload = request.body;
+
+  console.log("Got payload: " + payload);
+
+  response.status(200);
+});
+
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
@@ -35,6 +45,8 @@ app.post('/create-checkout-session', async (req, res) => {
   });
 
   res.send(session);
+  res.send('Nice')
+  res.status(200);
 });
 
 
